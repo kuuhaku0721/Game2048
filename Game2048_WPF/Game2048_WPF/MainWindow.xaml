@@ -1,0 +1,79 @@
+﻿<Window x:Class="Game2048_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game2048_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="810">
+    <Grid Margin="0,0,0,5">
+        <Grid Margin="32,65,378,15" Background="AliceBlue"  Width="400" Height="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Label Name="lab00" Content="2" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Name="lab01" Content="0" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Label Name="lab02" Content="4" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="3">
+                <Label Name="lab03" Content="8" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Label Name="lab10" Content="WPF" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Label Name="lab11" Content="小"  FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Label Name="lab12" Content="游"  FontSize="32"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Label Name="lab13" Content="戏"  FontSize="32"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Label Name="lab20" Content="" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Label Name="lab21" Content="点" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="2">
+                <Label Name="lab22" Content="击" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="3">
+                <Label Name="lab23" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Label Name="lab30" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Label Name="lab31" Content="开" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="2">
+                <Label Name="lab32" Content="始" FontSize="32"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="3">
+                <Label Name="lab33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Grid>
+        </Grid>
+        <Button Name="btnStart" Content="开始游戏" HorizontalAlignment="Left" Margin="477,87,0,0" VerticalAlignment="Top" Height="36" Width="90" Click="btnStart_Click"/>
+        <Button Name="btnReset"  Content="重置游戏" HorizontalAlignment="Left" Margin="591,87,0,0" VerticalAlignment="Top" Height="36" Width="90" Click="btnReset_Click"/>
+        <TextBlock Name="textBlock" Background="Aquamarine" HorizontalAlignment="Left" Margin="477,128,0,0" TextWrapping="Wrap" Text="请开始您的游戏" VerticalAlignment="Top" Height="300" Width="204"/>
+        <Label FontSize="34" Content="2048WPF小游戏" HorizontalAlignment="Left" Margin="297,10,0,0" VerticalAlignment="Top" Width="270" Height="50"/>
+        <GroupBox Header="由此去" Margin="437,60,89,10" BorderBrush="BlueViolet" BorderThickness="2"/>
+
+    </Grid>
+</Window>
